@@ -1,3 +1,4 @@
 # Repo.SoulTalker
-"Transforming visions and ideas into reality". -m
+"Transforming visions and ideas into reality".
+
 "Created Prototype of Project X".

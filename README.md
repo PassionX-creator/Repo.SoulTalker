@@ -35,7 +35,7 @@ In an increasingly global world, SoulTalker breaks down communication barriers f
 ---
 
 ## 📸 Preview
-![Concept Sketch](./assets/soulTalker_sketch.png)  
+![Concept Sketch](./assets/https://shorturl.at/EgCon)  
 > Sketch-based concept of the SoulTalker headset, showing mic, display, emotion indicator, and earbud docking.
 
 ---

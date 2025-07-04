@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoulTalker UI Prototype</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .screen {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    h1, h2 {
+      margin: 0;
+      color: #333;
+    }
+    button, select {
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 10px;
+      border: none;
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .waveform {
+      background: #e0f0ff;
+      padding: 10px;
+      border-radius: 10px;
+      font-style: italic;
+      color: #0056b3;
+    }
+    .original-text, .translated-text, .emotion-tag, .playback-area, .emotion-circle {
+      background: #f0f0f0;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .emotion-circle {
+      font-size: 1.2rem;
+      text-align: center;
+      color: #fff;
+    }
+    .joy {
+      background-color: #FFD700;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Frame: Home Screen -->
+  <div class="screen home">
+    <h1>SoulTalker</h1>
+    <button>Start Conversation</button>
+    <button>Settings</button>
+  </div>
+
+  <!-- Frame: Live Conversation -->
+  <div class="screen conversation">
+    <div class="waveform">🎤 Listening...</div>
+    <p class="original-text">"How are you feeling today?"</p>
+    <p class="translated-text">[Translated in Hindi]: "Aap aaj kaisa mehsoos kar rahe hain?"</p>
+    <p class="emotion-tag">Detected Emotion: Joy 😊</p>
+    <button>Reply</button>
+  </div>
+
+  <!-- Frame: Reply Screen -->
+  <div class="screen reply">
+    <h2>Speak your reply</h2>
+    <button>🎙 Record</button>
+    <div class="playback-area">▶️ Your reply will appear here</div>
+    <button>Send</button>
+  </div>
+
+  <!-- Frame: Settings -->
+  <div class="screen settings">
+    <h2>Settings</h2>
+    <label>Language Preference</label>
+    <select>
+      <option>English</option>
+      <option>Hindi</option>
+      <option>Urdu</option>
+      <option>Spanish</option>
+    </select>
+    <label>Emotion Response Mode</label>
+    <select>
+      <option>Soft</option>
+      <option>Neutral</option>
+      <option>Empathetic</option>
+    </select>
+  </div>
+
+  <!-- Frame: Emotion Feedback -->
+  <div class="screen emotion-feedback">
+    <h2>Emotion Detected</h2>
+    <div class="emotion-circle joy">😊 Joyful Response Enabled</div>
+    <p>Your tone and facial expression suggest happiness. The device will use a light, warm tone in translation.</p>
+    <button>OK</button>
+  </div>
+
+</body>
+</html>
